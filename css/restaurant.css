@@ -14,6 +14,7 @@
   background-color: #ccc;
   height: 400px;
   width: 100%;
+  height: 100vh;
 }
 
 #restaurant-name {
@@ -32,6 +33,7 @@
 #restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
+  align-self: flex-start;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -51,6 +53,12 @@
   width: 100%;
 }
 
+#restaurant-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
@@ -64,18 +72,47 @@
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
-  width: 85%;
 }
 #reviews-list li p {
   margin: 0 0 10px;
 }
 #restaurant-hours td {
   color: #666;
+}
+
+#restaurant-hours {
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 900px) {
+  .restaurant-maincontent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #restaurant-container {
+    order: 1;
+    flex: 6;
+    flex: 1 1 50vw;
+  }
+
+  #map-container {
+    order: 2;
+    flex: 5;
+    flex: 1 1 50vw;
+    height: 100%;
+  }
+
+  #reviews-container {
+    order: 3;
+    flex: 1;
+    flex: 1 1 500px;
+  }
 }
