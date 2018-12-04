@@ -91,6 +91,10 @@
   align-self: flex-start;
 }
 
+#restaurant-hours-address {
+  padding-left: 1em;
+}
+
 @media screen and (min-width: 900px) {
   .restaurant-maincontent {
     display: flex;
