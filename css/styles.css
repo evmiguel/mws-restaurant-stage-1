@@ -140,6 +140,10 @@ nav h1 a {
   #breadcrumb {
     width: 100%;
   }
+
+  body.inside {
+    width: 100%;
+  }
 }
 
 /* ====================== Restaurant Listing ====================== */
