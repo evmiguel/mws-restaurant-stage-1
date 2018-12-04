@@ -136,6 +136,10 @@ nav h1 a {
     height: 150px;
     flex-direction: column;
   }
+
+  #breadcrumb {
+    width: 100%;
+  }
 }
 
 /* ====================== Restaurant Listing ====================== */
