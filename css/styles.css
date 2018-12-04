@@ -71,7 +71,6 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
 }
 
 /* Display list items side by side */
@@ -137,11 +136,7 @@ nav h1 a {
     flex-direction: column;
   }
 
-  #breadcrumb {
-    width: 100%;
-  }
-
-  body.inside {
+  body, html {
     width: 100%;
   }
 }
